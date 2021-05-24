@@ -1,4 +1,4 @@
-{% set version = '0.0-2' %}
+{% set version = "0.0-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 1002
   rpaths:
     - lib/R/lib/
@@ -35,9 +35,8 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=rebus.unicode
-  license: Other
-  summary: Build regular expressions piece by piece using human readable code. This package contains
-    Unicode functionality, and is primarily intended to be used by package developers.
+  license: Unlimited
+  summary: Build regular expressions piece by piece using human readable code. This package contains Unicode functionality, and is primarily intended to be used by package developers.
 
 extra:
   recipe-maintainers:
